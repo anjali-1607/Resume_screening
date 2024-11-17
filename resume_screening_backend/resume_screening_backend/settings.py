@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure-#64cp8iq*e@os$wi%50c!x^8lr3mgkp&4ux*%y6)f=iyahjw@+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+      "localhost",  # React frontend
+      "127.0.0.1"
+]
 
 
 # Application definition
@@ -56,7 +59,11 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React frontend
+
+
 ]
+
+CSRF_TRUSTED_ORIGINS = ["http://localhost:8000","http://localhost:3000"]
 
 ROOT_URLCONF = 'resume_screening_backend.urls'
 

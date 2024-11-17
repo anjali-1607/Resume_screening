@@ -1,0 +1,80 @@
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+# If you have custom directories for static and media files
+/static/
+/media/
+
+# If you're using Django migrations
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Environment variables
+.env
+*.env
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+env.bak/
+venv.bak/
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Test outputs
+.tox/
+.pytest_cache/
+.junit.xml
+test-results.xml
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Profiling data
+.prof
+
+# Celery
+celerybeat-schedule
+
+# Other
+*.pem
+*.key
